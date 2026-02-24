@@ -20,15 +20,15 @@ del {
 }
 @font-face {
     font-family: 'product_sans_bold';
-    src: url('../fonts/product_sans/product_sans_bold-webfont.woff2') format('woff2'),
-         url('../fonts/product_sans/product_sans_bold-webfont.woff') format('woff');
+    src: url('../fonts/product_sans_bold-webfont.woff2') format('woff2'),
+         url('../fonts/product_sans_bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'product_sans_regular';
-    src: url('../fonts/product_sans/product_sans_regular-webfont.woff2') format('woff2'),
-         url('../fonts/product_sans/product_sans_regular-webfont.woff') format('woff');
+    src: url('../fonts/product_sans_regular-webfont.woff2') format('woff2'),
+         url('../fonts/product_sans_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -102,6 +102,9 @@ br.clear {
     width:100px;
 }
 .wrapper header .left h1 a { 
+    display:block;
+    width:100%;
+
 }
 .wrapper header .left h1 a img { 
     width:100%;
@@ -109,7 +112,7 @@ br.clear {
 }
 .wrapper header .right {
 }
-.wrapper header .right .search { 
+.wrapper header .right form { 
     display:flex;
     justify-content:left;
     align-items:center;
@@ -117,12 +120,12 @@ br.clear {
     padding:10px;
     border-radius:6px;
 }
-.wrapper header .right .search img { 
+.wrapper header .right .search form img { 
     display:block;
     margin-right: 8px;
     width:15px;
 }
-.wrapper header .right .search input { 
+.wrapper header .right .form input { 
     color:#8d8d8d;
     font-size: 13px;
     opacity:1;
@@ -154,6 +157,10 @@ br.clear {
     padding:8px;
     margin-right: 13px;
 }
+.wrapper .head ul li.first a{
+    display:flex;
+    align-items: center;
+}
 .wrapper .head ul li.first:hover {
     border: 2px solid #4387ee;
 }
@@ -166,6 +173,10 @@ br.clear {
     padding-left: 1px;
     padding-right:8px;
     margin-right: 13px;
+}
+.wrapper .head ul li a{
+    display:flex;
+    align-items: center;
 }
 .wrapper .head ul li:hover {
     border: 2px solid #4387ee;
@@ -221,6 +232,7 @@ br.clear {
 .items .item .middle h3 { 
     font-size:15px;
     font-weight:600;
+    color:#000118;
 }
 .items .item .bottom { 
     padding:0px 10px;
@@ -235,6 +247,7 @@ br.clear {
 }
 .items .item .bottom span { 
     font-size:13px;
+    color:#000118;
 }
 @media all and (max-width: 980px){
     .items { 
